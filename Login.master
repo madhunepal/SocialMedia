@@ -1,0 +1,100 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Login.master.cs" Inherits="Login" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <link rel="stylesheet" type="text/css" />
+    <style type="text/css">
+
+.logo {
+	float:left;
+	width:517px;
+	height:86px;
+	padding:0;
+	margin:0 auto;
+}
+h1 {
+	margin:0;
+	padding:20px 0 0 0;
+	color:#636363;
+	font:bold 38px/1.2em Arial, Helvetica, sans-serif;
+	letter-spacing:-2px;
+            width: 501px;
+            height: 56px;
+        }
+h1 a {
+	color:#636363;
+	text-decoration:none;
+}
+a {
+	color:#97c950;
+	text-decoration:underline;
+}
+h1 small {
+	padding:0 10px;
+	font:normal 12px/1.2em Arial, Helvetica, sans-serif;
+	letter-spacing:normal;
+}
+        .style3
+        {
+            font-family: Verdana;
+            font-weight: bold;
+            font-size: small;
+        }
+        .style4
+        {
+            width: 1125px;
+        }
+        .style6
+        {
+            height: 235px;
+            width: 1125px;
+        }
+        .style2
+        {
+            color: #3399FF;
+        }
+        </style>
+</head>
+<body bgcolor="#cccccc" style="background-color: #FFFFFF">
+    <form id="form1" runat="server">
+        <table style="width: 100%">
+            <tr>
+                <td class="style4">
+                    <h1>
+                        <a href="#"><span class="style2">Social</span>Like<span class="style2">Sharing</span><small>The 
+                        Community Site...</small></a></h1>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;" class="style4">
+                    <span class="style3">Are You</span>
+                    <asp:Image ID="Image2" runat="server" Height="21px" 
+                        ImageUrl="~/images/userpic.gif" Width="25px" />
+                    <asp:LinkButton ID="LinkButton1" runat="server" Font-Bold="True" 
+                        Font-Names="Verdana" Font-Size="Medium" ForeColor="#3333FF" 
+                        PostBackUrl="~/Admin/adminlogin.aspx">Admin?</asp:LinkButton>
+                </td>
+            </tr>
+            <tr>
+                <td class="style4">
+                    <asp:Image ID="Image1" runat="server" BorderStyle="None" BorderWidth="3px"
+                        Height="238px" ImageUrl="~/images/header_images.jpg" Width="100%" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style6">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: middle; text-align: center" class="style4">
+                    <strong><span style="color: #663333">Copyright@SociallikeSharing.Com</span></strong></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
